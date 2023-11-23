@@ -77,6 +77,92 @@ section {
   position: relative;
 }
 
+/* hero end */
+
+/* cart start */
+
+.cart {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  background-color: grey;
+  width: 50rem;
+  height: 80rem;
+  position: absolute;
+  transform: translateX(190%);
+  opacity: 90%;
+}
+
+.cart .groupNameandImage {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  text-align: center;
+}
+
+.cart .groupNameandImage h3 {
+  font-size: 2rem;
+  padding-top: 10rem;
+  /* background-color: pink; */
+  text-align: center;
+}
+
+.cart .groupNameandImage img {
+  width: 25rem;
+  padding-top: 3rem;
+}
+
+.cart .groupTambahKurang {
+  align-items: center;
+  padding-top: 3rem;
+  margin-top: 2rem;
+  display: flex;
+  background-color: pink;
+  /* text-align: center; */
+  /* right: 2rem; */
+  justify-content: space-around;
+}
+
+.cart .groupTambahKurang .kurang,
+.cart .groupTambahKurang .count,
+.cart .groupTambahKurang .tambah {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart .groupTambahKurang .kurang {
+  border: 1px solid red;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.cart .groupTambahKurang .kurang a {
+  align-items: center;
+  font-size: 5rem;
+  /* text-align: center; */
+}
+
+.cart .groupTambahKurang .count {
+  align-items: center;
+  font-size: 5rem;
+  /* text-align: center; */
+  border: 1px solid red;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.cart .groupTambahKurang .tambah {
+  border: 1px solid red;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.cart .groupTambahKurang .tambah a {
+  align-items: center;
+  font-size: 5rem;
+  /* text-align: center; */
+}
+
+/* cart end */
+
 /* product start */
 
 .product .box-container {
@@ -87,6 +173,11 @@ section {
 .product h2 {
   text-align: center;
   font-size: 5rem;
+}
+
+.product .box-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product .box-container .box-product {
@@ -128,6 +219,12 @@ section {
 /* product end */
 
 /* contact start */
+
+.contact h1 {
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
 
 .contact form {
   text-align: center;
