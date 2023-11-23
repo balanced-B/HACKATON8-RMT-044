@@ -5,16 +5,18 @@ let cars =[{id:1,name:'ferari',stock:10,harga:200000000,img:'https://cdn.ferrari
             
 ]
 console.log('test')
-
-let wadah=document.getElementById('wadah')
-wadah.innerHTML='';
-
-for (let car of cars) {
-    console.log(car)
-  wadah.innerHTML+=`<div id="${car.id}" class="box-product">
-  <img src="${car.img}" alt="${car.name}">
-  <h3> Stock : ${car.stock}</h3>
-  <h3> harga : ${car.harga}</h3>
-</div>` 
-
+function render(array){
+    let wadah=document.getElementById('wadah')
+    wadah.innerHTML='';
+    
+    for (let car of cars) {
+        console.log(car)
+      wadah.innerHTML+=`<div id="${car.id}" class="box-product">
+      <img src="${car.img}" alt="${car.name}">
+      <h3> Stock : ${car.stock}</h3>
+      <h3> harga : ${car.harga}</h3>
+    </div>` 
+    
+    }
 }
+render(cars)
