@@ -73,3 +73,14 @@ function render(array){
     }
 }
 render(cars)
+
+function showCart() {
+    let cart = document.getElementById("cart");
+     
+    if (cart.style.display === "none") {
+       cart.style.display = "block";
+    } else {
+       cart.style.display = "none";
+    }
+   }
+
