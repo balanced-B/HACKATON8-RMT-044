@@ -105,9 +105,18 @@ section {
   text-align: center;
 }
 
+.cart .groupNameandImage h4 {
+  font-size: 1.8rem;
+}
+
+.cart .groupNameandImage p {
+  font-size: 1.5rem;
+}
+
 .cart .groupNameandImage img {
   width: 25rem;
   padding-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .cart .groupTambahKurang {
@@ -115,7 +124,7 @@ section {
   padding-top: 3rem;
   margin-top: 2rem;
   display: flex;
-  background-color: pink;
+  /* background-color: pink; */
   /* text-align: center; */
   /* right: 2rem; */
   justify-content: space-around;
@@ -129,36 +138,48 @@ section {
 }
 
 .cart .groupTambahKurang .kurang {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
 .cart .groupTambahKurang .kurang a {
   align-items: center;
-  font-size: 5rem;
+  font-size: 3rem;
   /* text-align: center; */
 }
 
 .cart .groupTambahKurang .count {
   align-items: center;
-  font-size: 5rem;
+  font-size: 3rem;
   /* text-align: center; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
 .cart .groupTambahKurang .tambah {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
 .cart .groupTambahKurang .tambah a {
   align-items: center;
-  font-size: 5rem;
+  font-size: 3rem;
   /* text-align: center; */
+}
+
+.cart .jumlah {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.cart .delete {
+  font-size: 2rem;
+  transform: translateX(80%);
+  padding-top: 6rem;
 }
 
 /* cart end */
@@ -180,22 +201,44 @@ section {
   flex-wrap: wrap;
 }
 
-.product .box-container .box-product {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+.product .box-product {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* gap: 1rem; */
+  text-align: center;
 }
 
 .product .box-container .box-product img {
   max-width: 100%;
-  height: 40rem;
+  height: 25rem;
   padding-top: 3rem;
-  padding-left: 3rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
-  flex: 1 1 30rem;
+  /* flex: 1 1 25rem; */
 }
 
-.cart-container {
+.product .box-product h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  /* padding-bottom: 1.5rem; */
+}
+
+.product .box-product a {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--primer);
+  /* background-color: ; */
+}
+
+.product .box-product a:hover {
+  background-color: rgb(226, 100, 100);
+}
+
+/* product end */
+
+/* cart start */
+
+/* .cart-container {
   position: relative;
 }
 
@@ -214,9 +257,9 @@ section {
 #cart-content p {
   margin: 0;
   padding: 5px;
-}
+} */
 
-/* product end */
+/* end cart */
 
 /* contact start */
 
