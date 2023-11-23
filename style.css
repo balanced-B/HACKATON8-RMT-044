@@ -1,0 +1,92 @@
+:root {
+    --primer: black;
+    --sekunder: white ;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.e-commerce {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+}
+
+#menu-btn {
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#search-btn, #account-btn, #cart-btn {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+.newsletter {
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.newsletter p {
+    margin-bottom: 5px;
+}
