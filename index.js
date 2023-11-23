@@ -5,6 +5,9 @@ let cars = [
     stock: 10,
     harga: 200000000,
     img: "https://cdn.ferrari.com/cms/network/media/img/resize/5db98e9b8c92940b3a3de720-ferrari-458-italia-design-focus-1?",
+    tahun: 2016,
+    Cc: '3000cc',
+    type: 'Super Car'
   },
   {
     id: 2,
@@ -12,6 +15,9 @@ let cars = [
     stock: 10,
     harga: 200000000,
     img: "https://cdn.motor1.com/images/mgl/OozxwY/s3/2024-lamborghini-aventador-successor-rendering.jpg",
+    tahun: 2016,
+    Cc: '3000cc',
+    type: 'Super Car'
   },
   {
     id: 3,
@@ -19,6 +25,9 @@ let cars = [
     stock: 10,
     harga: 200000000,
     img: "https://cdn.ferrari.com/cms/network/media/img/resize/5db98e9b8c92940b3a3de720-ferrari-458-italia-design-focus-1?",
+    tahun: 2016,
+    Cc: '3000cc',
+    type: 'Super Car'
   },
   {
     id: 4,
@@ -26,34 +35,9 @@ let cars = [
     stock: 10,
     harga: 200000000,
     img: "https://cdn.motor1.com/images/mgl/OozxwY/s3/2024-lamborghini-aventador-successor-rendering.jpg",
-  },
-  {
-    id: 3,
-    name: "ferari",
-    stock: 10,
-    harga: 200000000,
-    img: "https://cdn.ferrari.com/cms/network/media/img/resize/5db98e9b8c92940b3a3de720-ferrari-458-italia-design-focus-1?",
-  },
-  {
-    id: 4,
-    name: "lambo",
-    stock: 10,
-    harga: 200000000,
-    img: "https://cdn.motor1.com/images/mgl/OozxwY/s3/2024-lamborghini-aventador-successor-rendering.jpg",
-  },
-  {
-    id: 3,
-    name: "ferari",
-    stock: 10,
-    harga: 200000000,
-    img: "https://cdn.ferrari.com/cms/network/media/img/resize/5db98e9b8c92940b3a3de720-ferrari-458-italia-design-focus-1?",
-  },
-  {
-    id: 4,
-    name: "lambo",
-    stock: 10,
-    harga: 200000000,
-    img: "https://cdn.motor1.com/images/mgl/OozxwY/s3/2024-lamborghini-aventador-successor-rendering.jpg",
+    tahun: 2016,
+    Cc: '3000cc',
+    type: 'Super Car'
   },
 ];
 // console.log("test");
@@ -90,12 +74,10 @@ function renderCart (array) {
             <h3 class="namaProduct" id="namaProduct">
                 ${item.name}
             </h3>
-            <h4>type: -</h4>
+            <h4>type:"${item.type}"</h4>
             <img src="${item.img}" alt="${item.name}" class="imageProduct" id="imageProduct">
-            <p>Spesifikasi: -</p>
-            <p>9999</p>
-            <p>Xcc</p>
-            <p>warna mobil</p>
+            <p>"${item.tahun}"</p>
+            <p>"${item.Cc}"</p>
         </div>
         <div class="groupTambahKurang" id="groupTambahKurang">
             <div class="count" id="count">
@@ -142,6 +124,10 @@ function buyCar(id) {
     render(cars)
     renderCart(keranjang)
     // console.log(cart)
+}
+
+function plusMinus() {
+
 }
 
 
