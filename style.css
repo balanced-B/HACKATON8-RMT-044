@@ -84,9 +84,10 @@ section {
 .cart {
   /* display: flex; */
   /* flex-wrap: wrap; */
-  background-color: grey;
+  background-color: rgb(208, 192, 192);
+  box-shadow: 20px 20px 50px 10px rgb(226, 100, 100) inset;
   width: 50rem;
-  height: 80rem;
+  height: 150.6rem;
   position: absolute;
   transform: translateX(190%);
   opacity: 90%;
@@ -131,25 +132,6 @@ section {
   justify-content: space-around;
 }
 
-.cart .groupTambahKurang .kurang,
-.cart .groupTambahKurang .count,
-.cart .groupTambahKurang .tambah {
-  align-items: center;
-  justify-content: space-around;
-}
-
-.cart .groupTambahKurang .kurang {
-  /* border: 1px solid red; */
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.cart .groupTambahKurang .kurang a {
-  align-items: center;
-  font-size: 3rem;
-  /* text-align: center; */
-}
-
 .cart .groupTambahKurang .count {
   align-items: center;
   font-size: 3rem;
@@ -157,18 +139,6 @@ section {
   /* border: 1px solid red; */
   margin-left: 2rem;
   margin-right: 2rem;
-}
-
-.cart .groupTambahKurang .tambah {
-  /* border: 1px solid red; */
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.cart .groupTambahKurang .tambah a {
-  align-items: center;
-  font-size: 3rem;
-  /* text-align: center; */
 }
 
 .cart .jumlah {
@@ -181,8 +151,8 @@ section {
   font-size: 2rem;
   transform: translateX(80%);
   padding-top: 6rem;
+  color: var(--primer);
 }
-
 /* cart end */
 
 /* product start */
