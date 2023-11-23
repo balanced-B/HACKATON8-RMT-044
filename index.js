@@ -58,15 +58,18 @@ let cars = [
 ];
 console.log("test");
 
-let wadah = document.getElementById("wadah");
-wadah.innerHTML = "";
-
-for (let car of cars) {
-  console.log(car);
-  wadah.innerHTML += `<div id="${car.id}" class="box-product">
-  <img src="${car.img}" alt="${car.name}">
-  <h3> Stock : ${car.stock}</h3>
-  <h3> harga : ${car.harga}</h3>
-  <a class="beli" id="beli" href="#">Buy Now</a>
-</div>`;
+function render(array){
+    let wadah=document.getElementById('wadah')
+    wadah.innerHTML='';
+    
+    for (let car of cars) {
+        console.log(car)
+      wadah.innerHTML+=`<div id="${car.id}" class="box-product">
+      <img src="${car.img}" alt="${car.name}">
+      <h3> Stock : ${car.stock}</h3>
+      <h3> harga : ${car.harga}</h3>
+    </div>` 
+    
+    }
 }
+render(cars)
