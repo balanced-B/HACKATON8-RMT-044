@@ -67,5 +67,6 @@ for (let car of cars) {
   <img src="${car.img}" alt="${car.name}">
   <h3> Stock : ${car.stock}</h3>
   <h3> harga : ${car.harga}</h3>
+  <a class="beli" id="beli" href="#">Buy Now</a>
 </div>`;
 }
