@@ -90,6 +90,7 @@ section {
   position: absolute;
   transform: translateX(190%);
   opacity: 90%;
+  z-index: 99;
 }
 
 .cart .groupNameandImage {
